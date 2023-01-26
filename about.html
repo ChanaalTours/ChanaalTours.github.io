@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chanaal Tours</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js">
+        </script>
+    </head>
+
+<!--Design starts here-->
+    <body>
+        <!--div for basic content, should replace later-->
+        <div class="container-fluid center">
+            <h1>Chanaal Tours</h1>
+        </div>
+
+        <!--div for navbar-->
+        <nav class="navbar navbar-expand-sm blueback">
+            <div class="container-fluid">
+                <!--Links-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Carousel-->
+        <div id="chanaal" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#chanaal" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#chanaal" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#chanaal" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/slide1.jpg" alt="..." class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide2.jpg" alt="..." class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/slide3.jpg" alt="..." class="d-block" style="width:100%">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#chanaal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#chanaal" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+        </div>
+
+        <!--Packages-->
+        <div id="packages">
+            <div class="container text-center">
+                <div class="row gx-5 justify-content-center">
+                    <div  class="col col-md-4 package blueback border">
+                        <h3>Hajj</h3>
+                        <img src="images/packageHajj.jpg" alt="Hajj" width="400" height="300">
+                        <div class="unavailable">
+                            <h3><b>Package currently unavailable</b></h3>
+                        </div>
+                    </div>
+                    <div class="col col-md-4 package blueback border">
+                        <h3>Umrah</h3>
+                        <a href="umrah.html">
+                            <img src="images/packageUmrah.jpg" alt="Umrah" width="400" height="300">
+                        </a>
+                        <h4>Quad Sharing:   £1275 Per Person</h4>
+                        <h4>Triple Sharing: £1350 Per Person</h4>
+                        <h4>Double Sharing: £1525 Per Person</h4>
+                    </div>
+                    <div class="col col-md-4 package blueback border">
+                        <h3>Turkey</h3>
+                        <a href="turkey.html">
+                            <img src="images/packageTurkey.jpg" alt="Turkey" width="400"  height="300">
+                        </a>
+                        <h4>Quad Sharing:   £295</h4>
+                        <h4>Double Sharing: £325</h4>
+                        <div class="unavailable">
+                            <h3><b>Tickets NOT Included</b></h3>
+                        </div>
+                    </div>
+                    <div class="col col-md-6 package blueback border">
+                        <h3>Palestine</h3>
+                        <img src="images/packagePalestine.jpg" alt="Palestine" width="400" height="300">
+                        <div class="unavailable">
+                            <h3><b>Package currently unavailable</b></h3>
+                        </div>
+                    </div>
+                    <div class="col col-md-6 package blueback border">
+                        <h3>Iraq</h3>
+                        <img src="images/packageIraq.jpg" alt="Iraq" width="400" height="300">
+                        <div class="unavailable">
+                            <h3><b>Package currently unavailable</b></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <!--Google maps embed-->
+        <div id="map" class="center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.238917087872!2d-2.0997898840179943!3d53.535648168215786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb78ff2eb6195%3A0x387a0a94b8d80bf6!2s317%20Waterloo%20St%2C%20Oldham%20OL4%201ER!5e0!3m2!1sen!2suk!4v1667300067275!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+
+        <!--Bottom Information-->
+        <div class="blueback">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5>317 Waterloo Street | Oldham | OL4 1ER</h5>
+                        <h5>(+44) 0161 637 0603</h5>
+                        <h5>ctl786@hotmail.com</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Haji Asif Hussain (Director) - (+44) 07980 636 250</h5>
+                        <h5>Muhammad Hanif (Travel Consultant) - (+44) 07790 570 635</h5>
+                    </div>
+                </div>
+            </div>
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+        </div>
+
+        <!--Back to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/arrow.png" alt="..."></button>
+
+        <!--Scripts-->
+        <script>
+            //Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {[scrollFunction()]};
+
+            function scrollFunction()
+            {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                {
+                    mybutton.style.display = "block";
+                }
+                else
+                {
+                    mybutton.style.display = "none";
+                }
+            }
+            
+
+            function topFunction()
+            {
+                document.body.scrollTop = 0; //for safari
+                document.documentElement.scrollTop = 0; //for chrome, firefox, ie, edge, opera, etc
+            }
+
+        </script>
+
+    </body>
+</html>

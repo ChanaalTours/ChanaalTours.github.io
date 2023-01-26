@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chanaal Tours</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js">
+        </script>
+    </head>
+
+<!--Design starts here-->
+    <body>
+        <!--div for basic content, should replace later-->
+        <div class="container-fluid center">
+            <h1>Chanaal Tours</h1>
+        </div>
+
+        <!--div for navbar-->
+        <nav class="navbar navbar-expand-sm blueback">
+            <div class="container-fluid">
+                <!--Links-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="bg-image" style="background-image: url('images/Umrah_Faded.png'); height: 1000vh;">
+            <!--Umrah Heading-->
+            <div class="center heading">
+                <p><u><b>Umrah</b></u></p>
+                <img src="images/turkish_airlines.png" alt="..." width="135" height="90">
+            </div>
+            <!--Sharing-->
+            <div class="center share">
+                <div class="container">
+                    <!--Border-->
+                    <span class="border-top border-bottom border-dark">
+                        <div class="row">
+                            <div class="col depart_arrive">
+                                <b>Manchester to Jeddah: 8th February 2023</b>
+                            </div>
+                            <div class="col depart_arrive">
+                                <b>Madinah Munwarah to Manchester: 22nd February 2023</b>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <b>Quad Share</b>
+                            <div class="price">
+                                <b>£1275</b>
+                            </div>
+                            <div class="pp">
+                                Per Person
+                            </div>
+                        </div>
+                        <div class="col">
+                            <b>Triple Share</b>
+                            <div class="price">
+                                <b>£1350</b>
+                            </div>
+                            <div class="pp">
+                                Per Person
+                            </div>
+                        </div>
+                        <div class="col">
+                            <b>Double Share</b>
+                            <div class="price">
+                                <b>£1525</b>
+                            </div>
+                            <div class="pp">
+                                Per Person
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row points">
+                        <div class="col">
+                            Package Includes:
+                                <ul>
+                                    <li>Flight: Turkish Airlines via Istanbul</li>
+                                    <li>Tourist Visa</li>
+                                    <li>Economy Hotel Accomodation</li>
+                                    <li>Transport in Saudi Arabia</li>
+                                    <li>Zyartes</li>
+                                </ul>
+                        </div>
+                        <div class="col">
+                            Booking Requirements:
+                            <ul>
+                                <li>Over 6 months valid passport on <b class="warning">travel date</b></li>
+                                <li>50% deposit at booking</li>
+                                <li>Extra charge for non-European passport holders</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row points warning">
+                        <div class="col">
+                            Travel Insurance <b>NOT</b> included
+                        </div>
+                        <div class="col">
+                            PCR charges <b>NOT</b> included if authorites ask before departure (PCR not required)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--Bottom Information-->
+        <div class="blueback">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5>317 Waterloo Street | Oldham | OL4 1ER</h5>
+                        <h5>(+44) 0161 637 0603</h5>
+                        <h5>ctl786@hotmail.com</h5>
+                    </div>
+                    <div class="col">
+                        <h5>Haji Asif Hussain (Director) - (+44) 07980 636 250</h5>
+                        <h5>Muhammad Hanif (Travel Consultant) - (+44) 07790 570 635</h5>
+                    </div>
+                </div>
+            </div>
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+        </div>
+
+        <!--Back to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/arrow.png" alt="..."></button>
+
+        <!--Scripts-->
+        <script>
+            //Get the button
+            let mybutton = document.getElementById("myBtn");
+            var scrollLimit = 155;
+            var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+            var reload = false;
+
+            function preventDefault(e)
+            {
+                e.preventDefault();
+            }
+
+            function preventDefaultForScrollKeys(e)
+            {
+                if (keys[e.keyCode])
+                {
+                    preventDefault(e);
+                    return false;
+                }
+            }
+
+
+            var supportsPassive = false;
+            try
+            {
+                window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+                    get: function () { supportsPassive = true; }
+                }));
+            } catch(e) {}
+
+            var wheelOpt = supportsPassive ? { passive: false } : false;
+            var WheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+            window.onscroll = function() 
+            {
+                [scrollFunction()]
+            };
+
+            function scrollFunction()
+            {
+                if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20)
+                {
+                    mybutton.style.display = "block";
+                }
+                else
+                {
+                    mybutton.style.display = "none";
+                }
+
+                if (document.body.scrollTop >= scrollLimit || document.documentElement.scrollTop >= scrollLimit)
+                {
+                    document.body.scrollTop = scrollLimit;
+                    document.documentElement.scrollTop = scrollLimit;
+                    disableScroll();
+                }
+            }
+            
+
+            function topFunction()
+            {
+                document.body.scrollTop = 0; //for safari
+                document.documentElement.scrollTop = 0; //for chrome, firefox, ie, edge, opera, etc
+                enableScroll();
+            }
+
+            function disableScroll()
+            {
+                window.addEventListener('DOMMouseScroll', preventDefault, false); //older FF
+                window.addEventListener(WheelEvent, preventDefault, wheelOpt); //modern desktop
+                window.addEventListener('touchmove', preventDefault, wheelOpt);
+                window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+            }
+
+            function enableScroll()
+            {
+                window.removeEventListener('DOMMouseScroll', preventDefault, false);
+                window.removeEventListener(WheelEvent, preventDefault, wheelOpt);
+                window.removeEventListener('touchmove', preventDefault, wheelOpt);
+                window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+            }
+
+        </script>
+
+    </body>
+</html>
